@@ -1,8 +1,26 @@
 aid: envision-energy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/envision-energy.png
 name: Envision Energy
-description: 'Envision Energy is a company surfaced as a portfolio company of hongshan and added to the
-  API Evangelist network as a stub for enrichment. Sector: technology. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Envision Energy is a Chinese green-technology company founded in 2007 by Lei Zhang and
+  headquartered in Shanghai. It designs and manufactures smart wind turbines, operates one of the world''s
+  largest fleets of connected wind and solar assets, and builds net-zero industrial parks. Its business
+  spans energy storage and batteries (through Envision AESC), green hydrogen and green ammonia, and the
+  EnOS AIoT operating system delivered by its Envision Digital arm, which connects and manages energy and
+  IoT devices at scale. Envision was surfaced as a portfolio company of Hongshan (formerly Sequoia China)
+  and added to the API Evangelist network for enrichment; its public digital surface is a marketing site
+  and the EnOS platform, which is documented on region-restricted hosts not reachable for spec discovery
+  in this pass.'
 url: https://raw.githubusercontent.com/api-evangelist/envision-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Technology
+- Energy
+- Renewable Energy
+- Wind Energy
+- Energy Storage
+- Green Hydrogen
+- IoT
+- Sustainability
+- Net Zero
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/envision-energy-domain-security.yml
 - type: Website
-  url: https://envision-group.com
+  url: https://www.envision-group.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
